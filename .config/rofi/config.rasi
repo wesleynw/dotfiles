@@ -3,7 +3,7 @@ configuration {
     display-window: "Windows:";
     display-power: "Powermenu:";
     drun-display-format: "{icon} {name}";
-    modi: "window,run,drun,power";
+    modi: "window,run,drun,power-menu";
     show-icons: false;
     icon-theme: "Papirus";
     font: "DejaVuSansMono Nerd Font Mono 11";
@@ -15,8 +15,8 @@ configuration {
 window {
 	width: 45%;
 	border: 2px;
-	border-color: @bg;
-	border-radius: 5;
+	border-color: @fg-alt;
+	border-radius: 0;
 }
 
 element {

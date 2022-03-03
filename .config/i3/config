@@ -246,3 +246,10 @@ bindsym $mod+Shift+S exec $HOME/scripts/screenshot.sh -s &
 
 # start dunst notification server
 exec --no-startup-id /usr/bin/dunst &
+
+# 1Password
+exec --no-startup-id 1password --silent &
+bindsym $mod+m exec --no-startup-id 1password --quick-access
+
+# power menu
+bindsym $mod+Shift+Z exec --no-startup-id rofi -show p -modi p:$HOME/.config/rofi/rofi-power-menu --confirm=reboot/shutdown
