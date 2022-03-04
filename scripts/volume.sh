@@ -7,14 +7,19 @@ msgTag="myvolume"
 # Change the volume using alsa(might differ if you use pulseaudio)
 case $1 in 
 	up)
-		pactl set-sink-mute @DEFAULT_SINK@  false ; pactl set-sink-volume @DEFAULT_SINK@ +10%
+		#pactl set-sink-mute @DEFAULT_SINK@  false ; pactl set-sink-volume @DEFAULT_SINK@ +10%
+		pamixer -u
+		pamixer -i 5
 		;;
 	down)
-		pactl set-sink-mute @DEFAULT_SINK@ false ; pactl set-sink-volume @DEFAULT_SINK@ -10%
+		#pactl set-sink-mute @DEFAULT_SINK@ false ; pactl set-sink-volume @DEFAULT_SINK@ -10%
+		pamixer -u
+		pamixer -d 5
 		;;
 	mute)
 		# toggle
-		pactl set-sink-mute @DEFAULT_SINK@ toggle
+		#pactl set-sink-mute @DEFAULT_SINK@ toggle
+		pamixer -t
 		;;
 esac
 
