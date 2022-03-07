@@ -30,8 +30,8 @@ mute="$(pamixer --get-mute)"
 echo "deez nuts"
 
 if [[ $1 -ne "mute" || $mute == "false" ]]; then
-	dunstify -a "changeVolume" -u low -i audio-volume-high -h string:x-dunst-stack-tag:$msgTag \
+	dunstify -t 750 -a "changeVolume" -u low -i audio-volume-high -h string:x-dunst-stack-tag:$msgTag \
     	-h int:value:"$volume" "Volume: ${volume}%"
 else 
-	dunstify -a "changeVolume" -u low -i audio-volume-muted -h string:x-dunst-stack-tag:$msgTag "Volume muted" 
+	dunstify -t 750 -a "changeVolume" -u low -i audio-volume-muted -h string:x-dunst-stack-tag:$msgTag "Volume muted" 
 fi
