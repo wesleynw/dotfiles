@@ -7,10 +7,10 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "colorize_brackets": true,
   "tabs": {
     "show_close_button": "hover",
     "activate_on_close": "left_neighbour",
-    "close_position": "left",
     "file_icons": true,
     "git_status": false
   },
@@ -27,5 +27,6 @@
     "light": "One Light",
     "dark": "Ayu Mirage"
   },
-  "sticky_scroll": { "enabled": true }
+  "sticky_scroll": { "enabled": true },
+  "file_scan_inclusions": [".env*"]
 }
