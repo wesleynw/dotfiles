@@ -28,5 +28,5 @@
     "dark": "Ayu Mirage"
   },
   "sticky_scroll": { "enabled": true },
-  "file_scan_inclusions": [".env*"]
+  "file_scan_inclusions": ["**/.env*"]
 }
