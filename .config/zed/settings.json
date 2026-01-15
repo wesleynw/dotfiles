@@ -12,10 +12,10 @@
     "show_close_button": "hover",
     "activate_on_close": "left_neighbour",
     "file_icons": true,
-    "git_status": false
+    "git_status": false,
   },
   "edit_predictions": {
-    "mode": "subtle"
+    "mode": "subtle",
   },
   "show_edit_predictions": false,
   "restore_on_startup": "none",
@@ -25,8 +25,12 @@
   "theme": {
     "mode": "system",
     "light": "One Light",
-    "dark": "Ayu Mirage"
+    "dark": "Ayu Mirage",
   },
   "sticky_scroll": { "enabled": true },
-  "file_scan_inclusions": ["**/.env*"]
+  "file_scan_inclusions": ["**/.env*"],
+  "which_key": {
+    "enabled": true,
+    "delay_ms": 200,
+  },
 }
