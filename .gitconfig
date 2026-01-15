@@ -5,3 +5,5 @@ name = Wesley Weisenberger
 email = wesleynw@pm.me
 [push]
 	autoSetupRemote = true
+[commit]
+	pgpsign = true
