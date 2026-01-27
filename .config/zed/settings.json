@@ -7,6 +7,9 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "vim": {
+    "toggle_relative_line_numbers": true
+  },
   "colorize_brackets": true,
   "tabs": {
     "show_close_button": "hover",
@@ -15,10 +18,10 @@
     "git_status": false,
   },
   "edit_predictions": {
-    "mode": "subtle",
+    "mode": "eager",
   },
   "show_edit_predictions": false,
-  "restore_on_startup": "none",
+  "restore_on_startup": "launchpad",
   "vim_mode": true,
   "ui_font_size": 16,
   "buffer_font_size": 15,
