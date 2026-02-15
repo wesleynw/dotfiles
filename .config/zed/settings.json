@@ -7,8 +7,16 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "inlay_hints": {
+    "enabled": false,
+  },
+  "agent": {
+    "favorite_models": [],
+    "notify_when_agent_waiting": "never",
+    "model_parameters": [],
+  },
   "vim": {
-    "toggle_relative_line_numbers": true
+    "toggle_relative_line_numbers": true,
   },
   "colorize_brackets": true,
   "tabs": {
@@ -35,5 +43,12 @@
   "which_key": {
     "enabled": true,
     "delay_ms": 200,
+  },
+  "lsp": {
+    "gopls": {
+      "initialization_options": {
+        "buildFlags": ["-tags=integration"],
+      },
+    },
   },
 }
