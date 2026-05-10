@@ -7,10 +7,23 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "project_panel": {
+    "dock": "left"
+  },
+  "outline_panel": {
+    "dock": "left"
+  },
+  "collaboration_panel": {
+    "dock": "left"
+  },
+  "git_panel": {
+    "dock": "left"
+  },
   "inlay_hints": {
     "enabled": false,
   },
   "agent": {
+    "dock": "right",
     "favorite_models": [],
     "notify_when_agent_waiting": "never",
     "model_parameters": [],
