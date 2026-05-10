@@ -7,3 +7,5 @@ email = wesleynw@pm.me
 	autoSetupRemote = true
 [commit]
 	pgpsign = true
+[init]
+	defaultBranch = main
